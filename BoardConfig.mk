@@ -104,7 +104,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # Display
-TW_FRAMERATE := 60
+TW_FRAMERATE := 120
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
@@ -155,6 +155,7 @@ TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 
 # Kernel modules
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko goodix_core.ko leds-qpnp-vibrator-ldo.ko msm_drm.ko qti_battery_charger_main_m81.ko"
+TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 
 # Serialno
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
